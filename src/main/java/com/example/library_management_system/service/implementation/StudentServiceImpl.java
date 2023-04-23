@@ -47,8 +47,8 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Optional<Student> findStudentById(int id) throws Exception {
-        return studentRepository.findById(id);
+    public Optional<Student> findStudentById(int id) {
+        return Optional.of(studentRepository.findById(id).get());
     }
 
     @Override

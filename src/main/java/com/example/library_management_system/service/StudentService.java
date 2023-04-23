@@ -13,7 +13,7 @@ public interface StudentService {
 
     public String deleteStudentById(int id) throws Exception;
 
-    public Optional<Student> findStudentById(int id) throws Exception;
+    public Optional<Student> findStudentById(int id);
 
     public List<Student> findAllStudent();
 }
