@@ -29,4 +29,12 @@ public class Transaction {
     private boolean issueOperation;
 
     private TransactionStatus transactionStatus;
+
+    @ManyToOne
+    @JoinColumn
+    Card card;
+
+    @ManyToOne
+    @JoinColumn
+    Book book;
 }
